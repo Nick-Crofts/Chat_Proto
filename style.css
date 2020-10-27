@@ -230,7 +230,7 @@ body {
 
 .page-wrapper {
     height: 100vh;
-    width: 10%;
+    width: 5%;
 }
 
 .page-wrapper .theme {
@@ -466,12 +466,10 @@ body {
     animation: sonar 1.5s infinite;
 }
 
-/*--------------------------page-content-----------------------------*/
-
 .page-content {
     display: flex;
     flex-wrap: nowrap;
-    width: 88vw;
+    /* width: 88vw; */
     height: 100vh;
     margin-top: 20px;
 }
@@ -483,8 +481,6 @@ body {
 .page-content {
     overflow-x: hidden;
 }
-
-/*------scroll bar---------------------*/
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -601,9 +597,11 @@ body {
 }
 
 .contact-list {
-    float: left;
-    width: 500px;
-    margin-right: 20px;
+    /* float: left; */
+    /* width: 500px; */
+    /* margin-right: 20px; */
+    display: flex;
+    flex-direction: column;
     border: var(--border);
     border-radius: 5px;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
@@ -680,4 +678,16 @@ body {
 .searchInput i {
     margin-left: -28px;
     padding: 8px;
+}
+
+@media screen and (max-width: 1600px) {
+    .page-content {
+        width: 88vw;
+    }
+    .page-wrapper {
+        width: 20%;
+    }
+    .contact-list li img {
+        display: none;
+    }
 }
