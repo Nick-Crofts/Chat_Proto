@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCompany</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a href="#">Awesome TechCompany</a>
+                </div>
+                <div class="sidebar-header">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="https://i.imgur.com/QaoQArl.jpg"
+                            alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">
+                            <strong>Bob Robertson</strong>
+                        </span>
+                        <span class="user-role">Developer</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sidebar-search">
+                    <div>
+                        <div class="input-group searchInput">
+                            <input type="text" class="form-control search-menu" placeholder="Search...">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Channels</span>
+                        </li>
+                        <li class="sidebar-detail">
+                            <a href="#">
+                                <i class="fa fa-home"></i>
+                                <span>General</span>
+                                <span class="badge badge-pill badge-danger">12</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-detail">
+                            <a href="#">
+                                <i class="fa fa-gear"></i>
+                                <span>Development</span>
+                                <span class="badge badge-pill badge-danger">3</span>
+                            </a>
+                        <li class="sidebar-detail">
+                            <a href="#">
+                                <i class="fa fa-gear"></i>
+                                <span>Feed</span>
+                                <span class="badge badge-pill badge-danger">21</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-detail">
+                            <a href="#">
+                                <i class="fa fa-gear"></i>
+                                <span>Support</span>
+                            </a>
+                        </li>
+                        <li class="header-menu">
+                            <span>Extra</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span>Documentation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                <span>Examples</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge badge-pill badge-warning notification">3</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-envelope"></i>
+                    <span class="badge badge-pill badge-success notification">7</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-power-off"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="page-content">
+        <ul class="contact-list">
+            <div class="sidebar-search">
+                <div>
+                    <div class="input-group searchInput">
+                        <input type="text" class="form-control search-menu" placeholder="Search...">
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact1">
+                <img src="https://i.imgur.com/M1Cajcr.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Dale Cooper</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Minneapolis</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact2">
+                <img src="https://i.imgur.com/Xp5eWMh.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Jane Smith</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>San Diego</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact3">
+                <img src="https://i.imgur.com/hlwzcHB.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Maddy Ferguson</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Seattle</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact4">
+                <img src="https://i.imgur.com/L0LRPi1.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Robot Dave</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Atlanta</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact4">
+                <img src="https://i.imgur.com/ggao8ZY.png">
+                <div class="contact-info">
+                    <h4 class="heading--name">Donna Hayward</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Seattle</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact5">
+                <img src="https://i.imgur.com/IHgsEGF.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Scott Summers</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Anchorage</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact6">
+                <img src="https://i.imgur.com/N9jDfAo.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">James Madrox</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Brooklyn</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact7">
+                <img src="https://i.imgur.com/QBrIk6K.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">David Haller</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>London</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact8">
+                <img src="https://i.imgur.com/MsoEY2S.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Rhayne Sinclair</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Edinburgh</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact8">
+                <img src="https://i.imgur.com/Bm6C5UZ.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Kwannon</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Tokyo</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact8">
+                <img src="https://i.imgur.com/Ak6Hzok.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Alex Summers</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Anchorage</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact8">
+                <img src="https://i.imgur.com/fb08CFz.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">James Howlett</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Toronto</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact8">
+                <img src="https://i.imgur.com/zJfhi6D.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Henry McCoy</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>Dundee</div>
+                </div>
+            </li>
+            <li ng-repeat="athlete in athletesList.athletes | filter: athlete.name" id="contact8">
+                <img src="https://i.imgur.com/7BO2U7U.jpg">
+                <div class="contact-info">
+                    <h4 class="heading--name">Warren Worthington</h4>
+                    <div class="contact-item"><i class="fa fa-map-marker"></i>New York</div>
+                </div>
+            </li>
+        </ul>
+
+        <section class="msger">
+            <header class="msger-header">
+                <div class="msger-header-title">
+                    <i class="fas fa-comment-alt"></i> TechCompany
+                </div>
+                <div class="msger-header-options">
+                    <span><i class="fas fa-cog"></i></span>
+                </div>
+            </header>
+
+            <main class="msger-chat">
+                <div class="msg left-msg">
+                    <div class="msg-img" style="background-image: url(https://i.imgur.com/L0LRPi1.jpg)"></div>
+                    <div class="msg-bubble">
+                        <div class="msg-info">
+                            <div class="msg-info-name">Robot</div>
+                            <div class="msg-info-time">12:45</div>
+                        </div>
+                        <div class="msg-text">
+                            Chat is coming!
+                        </div>
+                    </div>
+                </div>
+                <div class="msg right-msg">
+                    <div class="msg-img" style="background-image: url(https://i.imgur.com/QaoQArl.jpg)"></div>
+                    <div class="msg-bubble">
+                        <div class="msg-info">
+                            <div class="msg-info-name">Bob</div>
+                            <div class="msg-info-time">12:46</div>
+                        </div>
+                        <div class="msg-text">
+                            The future is now!
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <form class="msger-inputarea">
+                <input type="text" class="msger-input" placeholder="Enter your message...">
+                <button type="submit" class="msger-send-btn">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
